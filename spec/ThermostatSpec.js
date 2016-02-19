@@ -52,15 +52,15 @@ describe('Thermostat', function() {
 
   describe('energy usage', function() {
 
-    it('has a default energy usage of yellow', function() {
-      expect(thermostat.currentEnergyUsage).toEqual('yellow');
+    it('has a default energy usage of black', function() {
+      expect(thermostat.currentEnergyUsage).toEqual('medium');
     });
 
     it('sets the colour to green when the temperature is below 18', function() {
       for(var i = 20; i >= 18; i--) {
         thermostat.decreaseTemperature();
       }
-      expect(thermostat.currentEnergyUsage).toEqual('green');
+      expect(thermostat.currentEnergyUsage).toEqual('low');
     });
 
     it('sets the colour to red when the temperature is above 25', function() {
@@ -68,7 +68,7 @@ describe('Thermostat', function() {
       for(var i = 20; i <= 25; i++) {
         thermostat.increaseTemperature();
       }
-      expect(thermostat.currentEnergyUsage).toEqual('red');
+      expect(thermostat.currentEnergyUsage).toEqual('high');
     });
   });
 

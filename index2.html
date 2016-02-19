@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="index2.css">
+  <title>Thermostat</title>
+</head>
+<body>
+  <section id='top'>
+  </section>
+  <section id='container'>
+    <section id='middle'>
+      <div id='display'>
+        <h1><span id="temperature"></span>&#8451</h1>
+      </div>
+      <div id='up'>
+        <button id="temperature-up">+</button>
+      </div>
+      <div id='down'>
+        <button id="temperature-down">-</button>
+      </div>
+      <div id='weather'>
+        <span class='weather' id="city"></span>
+        <a href="javascript:" id='toggle'>Toggle</a>
+        <span class='weather' id="icon"></span>
+        <span class='weather' id="current-temperature"></span>&#8451
+      </div>
+    </section>
+    <section id='bottom'>
+      <div class='controls'>
+        <button id="psm">PSM ON/OFF</button>
+      </div>
+      <div class='controls'>
+        <button id="reset">RESET</button>
+      </div>
+    </section>
+  </section>
+  <section id='search'>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="src/Thermostat.js"></script>
+  <script src="src/interface.js"></script>
+</body>
+</html>
