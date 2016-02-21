@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   function updateTemperature() {
   $('#temperature').text(thermostat.temperature);
-  // $('#temperature').attr('class', thermostat.currentEnergyUsage);
+  $('#temperature').attr('class', thermostat.currentEnergyUsage);
   }
 
   $('#temperature-up').on('click', function() {
@@ -56,13 +56,5 @@ $(document).ready(function() {
     var city = data.city;
     displayWeather(city);
   });
-
-  $('#toggle').toggle(function(){
-    $('#search').animate({width:200});
-  },function(){
-  $('#search').animate({width:0});
-});
-
-
 
 });

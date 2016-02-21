@@ -1,3 +1,15 @@
+.low {
+  color: green;
+}
+
+.medium {
+  color: black;
+}
+
+.high {
+  color: red;
+}
+
 body {
   font-family: helvetica-light;
 }
@@ -24,8 +36,8 @@ body {
   vertical-align: top;
   background-color: #cc6600;
   position: relative;
-  height: 80%;
-  width: 80%;
+  height: 500px;
+  width: 500px;
   margin: 0 auto;
   border-radius: 100%;
 }
@@ -78,6 +90,7 @@ button {
   background-color: red;
   display: hidden;
 }
+
 
 #bottom {
   width: 60%;
